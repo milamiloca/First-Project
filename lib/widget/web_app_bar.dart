@@ -14,9 +14,11 @@ class _WebAppBarState extends State<WebAppBar> {
       title: Row(
         children: [
           Image.asset(
-        "assets/channels4_profile.jpg",
+        "assets/LogoPNG.png",
+        height: 45,
         fit: BoxFit.contain,
         ),
+        Expanded(child: Container()),
         IconButton(
             onPressed: (){},
             icon: Icon(Icons.search)

@@ -11,8 +11,10 @@ class _MobileAppBarState extends State<MobileAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Color.fromARGB(255, 201, 164, 133),
       title: Image.asset(
-        "assets/channels4_profile.jpg",
+        "assets/LogoPNG.png",
+        height: 45,
         fit: BoxFit.contain,
         ),
         actions: [
@@ -28,6 +30,24 @@ class _MobileAppBarState extends State<MobileAppBar> {
             onPressed: (){},
             icon: Icon(Icons.more_vert)
           ),
+          SizedBox(width: 10,),
+          OutlinedButton(
+            onPressed: (){},
+            child: Text("Cadastrar"),
+            style: OutlinedButton.styleFrom(
+              backgroundColor: Color.fromARGB(255, 151, 3, 3),
+              primary: Color.fromARGB(255, 201, 164, 133),
+            ),
+          ),
+          SizedBox(width: 10,),
+          OutlinedButton(
+            onPressed: (){},
+            child: Text("Entrar"),
+            style: OutlinedButton.styleFrom(
+              backgroundColor: Color.fromARGB(255, 238, 182, 79),
+              primary: Color.fromARGB(255, 151, 3, 3),
+            ),
+          )
         ],
     );
     
